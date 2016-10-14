@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>WebDev Firebase Image Upload Test</title>
+		<script src="js/main.js"></script>
+	</head>
+	<body>
+		<img id="display">
+		<input type="file" id="input" onchange="uploadImage()">
+		<input type="button" value="Update image" onClick="updateImage()">
+
+		<script src="https://www.gstatic.com/firebasejs/3.4.1/firebase.js"></script>
+		<script>
+			// Initialize Firebase
+			var config = {
+				apiKey: "AIzaSyD2vyu51niCga5abq2pBSTPaFrGdCLBiMs",
+				authDomain: "test-26785.firebaseapp.com",
+				databaseURL: "https://test-26785.firebaseio.com",
+				storageBucket: "test-26785.appspot.com",
+				messagingSenderId: "174016411882"
+			};
+			firebase.initializeApp(config);
+		</script>
+	</body>
+</html>
